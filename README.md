@@ -1,2 +1,2 @@
 # web-dev projects
- Here you see all h eself made projects.
+ Here you see all the self made projects.
