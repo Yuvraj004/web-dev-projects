@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+body{
+    height:100vh ;
+    width: 100%;
+    background: linear-gradient(#24e1b5 0,#234eab) ;
+}
+.mainbox{
+    margin: 120px auto;
+    max-width: 400px;
+    width: 100%;
+    background: yellow;
+    border-radius: 5px;
+    padding: 30px;
+}
+.mainbox header{
+    font-size: 30px;
+    font-weight: 600;
+    color: navy;
+
+}
+.mainbox .taskinput{
+    display: flex;
+    height: 50px;
+    width: 200%;
+}
+.taskinput input{
+    height: 30px;
+    width: 300px;
+    outline: black;
+    border-radius: 3px;
+    padding-left: 15px;
+    transition: all 0.3s ease;
+}
+.taskinput input:focus{
+    border-color: #8E49E8;
+  }
+.taskinput button{
+    width: 50px;
+    height: 30px;
+    border: none;
+    outline: none;
+    background-color: antiquewhite;
+    color: #24e1b5;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-left: 5px;
+    opacity: 0.6;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.taskinput button:hover,.footer button:hover {
+    background:rgb(198, 25, 158) ;
+}
+.taskinput button.active{
+    opacity: 1;
+    background-color: rgb(18, 204, 24);
+    pointer-events: auto;
+}
+.mainbox .todolist{
+    max-height: 250px;
+    overflow-y:auto ;
+}
+
+.todolist li{
+    position: relative;
+    list-style: none;
+    margin-bottom: 8px;
+    background: #f2f2f2;
+    border-radius: 3px;
+    padding: 10px 15px;
+    cursor: default;
+    overflow: hidden;
+    word-wrap: break-word;
+  }
+  .todolist li .icon{
+    position: absolute;
+    right: -45px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #e74c3c;
+    width: 45px;
+    text-align: center;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  .todolist li:hover .icon{
+    right: 0px;
+  }
+ .mainbox .footer{
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footer button{
+    padding: 6px 10px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    margin-left: 5px;
+    background: #8E49E8;
+    cursor: pointer;
+    user-select: none;
+    opacity: 0.6;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+  .footer button.active{
+    opacity: 1;
+    pointer-events: auto;
+  }
+.creator{
+    background: black;
+    color: white;
+    padding: 25px;
+    margin: 10px;
+    border-radius: 5px;
+    align-items:flex-end;
+}
+.links{
+    padding: 10px;
+}
+
+
+
