@@ -1,7 +1,13 @@
 
 body{
-    background: lightblue;
+    background: linear-gradient(145deg,red,yellow);
     text-align: center;
+}
+a,a:visited{
+    color: #000;
+}
+a:hover{
+    color:aqua;
 }
 .navbar{
     border: 2px solid black;
@@ -10,9 +16,12 @@ body{
     margin: 3px;
     text-align: left;
 }
-.Home,.Lasers,.Theory_O_Rel{
+.Home,.Lasers,.Theory_O_Rel,.CharLasers,.About_us{
     padding: 10px;
-    
+    text-align: left;
+    background: yellow;
+    margin: 2px;
+    border: 2px solid black;
 }
 .base{
     display:flex;
@@ -24,7 +33,7 @@ body{
 }
 
 .Topics{
-    background: blueviolet;
+    background: lightblue;
     padding: 10px;
     padding-left: 1px;
     border: 2px solid black;
@@ -32,7 +41,8 @@ body{
     width: 30%;
     margin-right: 5px;
     border-radius: 4px;
-
+    position: sticky;
+    left:0;
     
 }
 .list{
